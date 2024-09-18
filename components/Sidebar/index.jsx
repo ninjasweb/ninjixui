@@ -1,23 +1,10 @@
+import { sidebarLinks } from "@/data/nav"
 import Link from "next/link"
 
 const Sidebar = () => {
-  const navLinks = [
-    {
-      title: "Introduction",
-      href: "/",
-    },
-    {
-      title: "About",
-      href: "/about",
-    },
-    {
-      title: "Contact",
-      href: "/contact",
-    },
-  ]
   return (
-    <div className="w-[20%] border border-green-600 sticky top-0 h-screen">
-      {navLinks.map((link, index) => {
+    <div className="w-[150px] border border-green-600 sticky top-0 h-screen">
+      {sidebarLinks.map((link, index) => {
         return (
           <Link
             key={index}
